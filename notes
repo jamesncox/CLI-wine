@@ -1,0 +1,35 @@
+https://www.totalwine.com/top-20-wines-of-2018
+
+Stuff to do:
+
+Plan out my CLI (user looking for best wines of 2018)
+
+Create basic structure (files/classes etc.)
+
+Fake/force a CLI interface (hardcoded)
+
+Build out the rough draft 
+
+Make it real! Scrape and all that.
+
+Discover the objects (inspecting/css selectors)
+
+Program it out: getting the classes to interact/work
+
+Creating a CLI gem to list top 20 wines of 2018
+
+
+list top 20 wines, variety, vintage, region
+
+give a drop down, link to more info, how to purchase
+
+
+
+make an object, build into a collection to call from
+
+wines will have a name
+wines will have a variety
+wines will have a vintage
+wines will have a region
+wines will have a single url that links to more info/how to purchase
+wines will have a brief description
