@@ -16,10 +16,20 @@ Discover the objects (inspecting/css selectors)
 
 Program it out: getting the classes to interact/work
 
-Creating a CLI gem to list top 20 wines of 2018
 
 
-list top 20 wines, variety, vintage, region
+Creating a CLI gem to list top 20 wines of 2018:
+
+user types top-wines
+
+shows a list of wines
+(top 20 wines, variety, vintage, region)
+
+1. OLEMA CABERNET SAUVIGNON SONOMA COUNTY, 2016
+2. SAMUEL ROBERT WINERY PINOT NOIR VINTNER'S RESERVE WILLAMETTE, 2017
+3. CHATEAU GARRAUD LALANDE DE POMEROL, 2015
+...
+20. ALBINO ARMANI PINOT GRIGIO CORVARA
 
 give a drop down, link to more info, how to purchase
 
