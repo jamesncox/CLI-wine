@@ -43,3 +43,20 @@ wines will have a vintage
 wines will have a region
 wines will have a single url that links to more info/how to purchase
 wines will have a brief description
+
+
+new notes:
+
+List off wine brands 
+
+  -  more details (wine no. 3)
+    - even more options (wine region, etc)
+
+Call function:
+
+"Hello, welcome to blah blah blah"
+  -list top 10 wines of 2018
+  -if input is 1..10, fire more details
+  -ask more questions 
+        - if input is whatever, give more inf
+        -if input == price, "$27" etc 
