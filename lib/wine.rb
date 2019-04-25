@@ -6,3 +6,5 @@ module Cli
     puts 'hi'
   end
 end
+
+require_relative '.lib/cli-wine/cli'

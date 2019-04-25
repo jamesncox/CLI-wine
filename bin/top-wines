@@ -1,3 +1,5 @@
 #!/usr/bin/env ruby
 
-puts "hello"
+require '.lib/wine'
+
+TopWines::CLI.new.call
