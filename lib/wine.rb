@@ -9,3 +9,6 @@
 require_relative 'wine/version'
 require_relative 'wine/cli'
 require_relative 'wine/wine_scraper'
+require 'pry'
+require 'nokogiri'
+require 'open-uri'

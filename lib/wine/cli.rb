@@ -1,5 +1,5 @@
 #our CLI controller
-
+require_relative './version.rb'
 class TopWines::CLI
 
     def call
