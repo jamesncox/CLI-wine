@@ -1,4 +1,4 @@
-require "cli/wine/version"
+# require "cli/wine/version"
 
 module Cli
   module Wine
@@ -7,4 +7,4 @@ module Cli
   end
 end
 
-require_relative '.lib/cli-wine/cli'
+require_relative 'wine/cli'
