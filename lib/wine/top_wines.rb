@@ -8,7 +8,7 @@ class TopWines
     attr_accessor :name, :rating, :price, :url
 
     def self.scrape_wines
-        wines = [] 
+        wines = []
 
      end
 

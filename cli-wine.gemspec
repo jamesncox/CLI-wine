@@ -5,7 +5,7 @@ require "wine/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "cli-wine"
-  spec.version       = Wine::VERSION
+  spec.version       = TopWines::VERSION
   spec.authors       = ["jamesncox"]
   spec.email         = ["jamesncox@yahoo.com"]
 
