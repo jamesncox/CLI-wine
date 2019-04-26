@@ -1,4 +1,4 @@
-https://www.totalwine.com/top-20-wines-of-2018
+https://www.wine.com/list/wine/7155?pricemax=20&ratingmin=95
 
 Stuff to do:
 
@@ -18,45 +18,21 @@ Program it out: getting the classes to interact/work
 
 
 
-Creating a CLI gem to list top 20 wines of 2018:
-
-user types top-wines
+Creating a CLI gem to give a user 95+ point wines under $20:
 
 shows a list of wines
-(top 20 wines, variety, vintage, region)
+(name, price, rating, url for more info)
 
-1. OLEMA CABERNET SAUVIGNON SONOMA COUNTY, 2016
-2. SAMUEL ROBERT WINERY PINOT NOIR VINTNER'S RESERVE WILLAMETTE, 2017
-3. CHATEAU GARRAUD LALANDE DE POMEROL, 2015
-...
-20. ALBINO ARMANI PINOT GRIGIO CORVARA
+1. Domaines Schlumberger Les Princes Abbes Riesling 2014, 95 points, $19.99
+2. Fabre Montmayou Reserva Cabernet Franc 2016, 96 points, $15.99
+3. Susana Balbo Signature Malbec 2016, 95 points, $19.99
 
 give a drop down, link to more info, how to purchase
-
 
 
 make an object, build into a collection to call from
 
 wines will have a name
-wines will have a variety
-wines will have a vintage
-wines will have a region
+wines will have a price
+wines will have a rating
 wines will have a single url that links to more info/how to purchase
-wines will have a brief description
-
-
-new notes:
-
-List off wine brands 
-
-  -  more details (wine no. 3)
-    - even more options (wine region, etc)
-
-Call function:
-
-"Hello, welcome to blah blah blah"
-  -list top 10 wines of 2018
-  -if input is 1..10, fire more details
-  -ask more questions 
-        - if input is whatever, give more inf
-        -if input == price, "$27" etc 
