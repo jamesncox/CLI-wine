@@ -1,11 +1,11 @@
 #create wine objects
 
-# 1. OLEMA CABERNET SAUVIGNON SONOMA COUNTY, 2016
-# 2. SAMUEL ROBERT WINERY PINOT NOIR VINTNER'S RESERVE WILLAMETTE, 2017
-# 3. CHATEAU GARRAUD LALANDE DE POMEROL, 2015
+# 1. Domaines Schlumberger Les Princes Abbes Riesling 2014, 95 points, $19.99
+# 2. Fabre Montmayou Reserva Cabernet Franc 2016, 96 points, $15.99
+# 3. Susana Balbo Signature Malbec 2016, 95 points, $19.99
 
 class TopWines
-    attr_accessor :name, :winery, :region, :vintage
+    attr_accessor :name, :rating, :price, :url
 
     def self.scrape_wines
         wines = [] 
