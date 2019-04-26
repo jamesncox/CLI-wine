@@ -33,6 +33,8 @@ class TopWines::CLI
                     puts "More info on wine 3..."
                 when "list"
                     list_wines 
+                else
+                    puts "Not sure what you meant, type list or exit"
             end
         end
     end
