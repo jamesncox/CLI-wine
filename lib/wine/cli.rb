@@ -22,7 +22,7 @@ class TopWines::CLI
     def menu
         input = nil
         while input != "exit"
-            puts "Enter the number of the wine you'd like more info on or type exit to enter:"
+            puts "Enter the number of the wine you'd like more info on or type list to see more wines or type exit:"
             input = gets.strip.downcase 
             case input
                 when "1"
@@ -31,6 +31,8 @@ class TopWines::CLI
                     puts "More info on wine 2..."
                 when "3"
                     puts "More info on wine 3..."
+                when "list"
+                    list_wines 
             end
         end
     end
