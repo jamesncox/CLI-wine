@@ -25,10 +25,13 @@ class TopWines::CLI
             case input
                 when "1"
                     puts "More info on wine 1..."
+                    break
                 when "2"
                     puts "More info on wine 2..."
+                    break
                 when "3"
                     puts "More info on wine 3..."
+                    break
             end
         end
     end

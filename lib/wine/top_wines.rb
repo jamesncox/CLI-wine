@@ -13,6 +13,13 @@ class TopWines
      end
 
 
+     names = Scraper.get_names("dkjlfhsdkjhlkjsdhf")
+
+     names.each do |str|
+        self.new.name = str 
+     end
+
+ 
 
 
 end
