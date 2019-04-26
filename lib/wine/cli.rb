@@ -1,5 +1,5 @@
 #our CLI controller
-require_relative './version.rb'
+
 class TopWines::CLI
 
     def call
@@ -9,13 +9,13 @@ class TopWines::CLI
     end
 
     def list_wines
-        Scraper.get_names("https://www.wine.com/list/wine/7155?pricemax=20&ratingmin=95")
-        # puts "The BEST wines under $20!"
-        # puts <<-DOC.gsub /^\s*/, ''
-        #     1. Domaines Schlumberger Les Princes Abbes Riesling 2014 - 95 points - $19.99
-        #     2. Fabre Montmayou Reserva Cabernet Franc 2016 - 96 points - $15.99
-        #     3. Susana Balbo Signature Malbec 2016 - 95 points - $19.99
-        # DOC
+        # Scraper.get_names("https://www.wine.com/list/wine/7155?pricemax=20&ratingmin=95")
+        puts "The BEST wines under $20!"
+        puts <<-DOC.gsub /^\s*/, ''
+            1. Fabre Montmayou Reserva Cabernet Franc 2016
+            2. Susana Balbo Signature Malbec 2016
+            3. Domaines Schlumberger Les Princes Abbes Riesling 2014
+        DOC
 
     end
 
@@ -34,7 +34,7 @@ class TopWines::CLI
                 when "list"
                     list_wines 
                 else
-                    puts "Not sure what you meant, type list or exit"
+                    puts "Not sure what you meant; type list or exit."
             end
         end
     end
