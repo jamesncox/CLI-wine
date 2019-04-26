@@ -1,3 +1,5 @@
+# require 'nokogiri'
+
 class Scraper
     
     # def self.scrape
@@ -12,7 +14,7 @@ class Scraper
             item.css("div.prodItemInfo").css("span.prodItemInfo_name").text
          end 
         # return names do NOT output
-         names.each {|item| puts item}
+         names.each.with_index(1) {|item, index| puts "#{index}: #{item}"}
     end 
 
     # master = []
@@ -26,4 +28,4 @@ class Scraper
 end
 
 
-Scraper.get_names("https://www.wine.com/list/wine/7155?pricemax=20&ratingmin=95")
+# Scraper.get_names("https://www.wine.com/list/wine/7155?pricemax=20&ratingmin=95")
