@@ -3,7 +3,8 @@
 class TopWines::class
 
     def call
-        puts "2018's Top Wines"
+        puts "The BEST wines under $20!"
+        top_wines
     end
 
 end
