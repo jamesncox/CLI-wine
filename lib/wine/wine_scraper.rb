@@ -3,19 +3,19 @@ require 'pry'
 
 class Scraper
     
-    # def self.scrape
-    #     doc = Nokogiri::HTML(open("https://www.wine.com/list/wine/7155?pricemax=20&ratingmin=95"))
-        
-    # end
+    def self.scrape
+        doc = Nokogiri::HTML(open("https://www.wine.com/list/wine/7155?pricemax=20&ratingmin=95"))
+        binding.pry
+    end
 
     #new class called self.get_wine(url)
     #scrape for prodItem
     #then separate attributes inside self.get_wine(url)
 
-    def self.get_winesI(url)
-        binding.pry
-        main_scrape = Nokogiri::HTML(open(url)).css()
-    end
+    # def self.get_wines(url)
+    #     binding.pry
+    #     main_scrape = Nokogiri::HTML(open(url)).css()
+    # end
 
     # def self.get_names(url)  
     #     data = Nokogiri::HTML(open(url)).css("ul.prodList").css("li.prodItem")
@@ -28,16 +28,7 @@ class Scraper
     #     names.each.with_index(1) {|item, index| puts "#{index}: #{item}"}
     # end 
 
-    # {k:, [v:, v2:, v3:]}
-
-    # wine_names = []
-    # fill wine_names array with key/value pairs like in student scraper
-
-    # [{name: "good_malbec", price: "$15", rating: "90", url: "goodwine.com"}, {name: "okay_syrah", price: "17",}]
-    
-    # { good_malbec: {price: 100, rating: "good", url: "link"},
-    #   syrah: {price: 70, rating: "shit", url: "link" }
-    # }   
+end
 
     # master = []
 
@@ -60,8 +51,6 @@ class Scraper
 #  {:name=>"Chateau Doisy Vedrines Sauternes (375ML Futures Pre-Sale) 2016"},
 #  {:name=>"Chateau Doisy Vedrines Sauternes (375ML Futures Pre-Sale) 2018"}]
 # [6] pry(Scraper)>
-
-end
 
 
 # Scraper.get_names("https://www.wine.com/list/wine/7155?pricemax=20&ratingmin=95")
