@@ -38,7 +38,7 @@ end
     # names = data.css("div.prodItemInfo").css("span.prodItemInfo_name").text
     # ratings = data.css("li.wineRatings_listItem").css(".wineRatings_rating").first.text
     # prices = data.css("div.productPrice").first.css(".prodItemStock_soldOut-smallText").text
-    # urls = [] ??????
+    # urls = data.css(".prodItemInfo_link").first.attributes["href"].value
 
 # [5] pry(Scraper)> x.map {|whatever| {name: whatever.css("span.prodItemInfo_name").text}}
 # => [{:name=>"Fabre Montmayou Reserva Cabernet Franc 2016"},
