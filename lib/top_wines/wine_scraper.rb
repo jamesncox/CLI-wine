@@ -35,7 +35,7 @@ end
 
     # master.map do |whatever|
     # end
-    # names = []
+    # names = data.css("div.prodItemInfo").css("span.prodItemInfo_name").text
     # ratings = data.css("li.wineRatings_listItem").css(".wineRatings_rating").first.text
     # prices = data.css("div.productPrice").first.css(".prodItemStock_soldOut-smallText").text
     # urls = [] ??????
