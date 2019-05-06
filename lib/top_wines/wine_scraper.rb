@@ -19,6 +19,7 @@ class Scraper
 
     def self.get_names(url)  
         data = Nokogiri::HTML(open(url)).css("ul.prodList").css("li.prodItem")
+        binding.pry
         
         names = data.map do |item|
             item.css("div.prodItemInfo").css("span.prodItemInfo_name").text
@@ -35,7 +36,7 @@ end
     # master.map do |whatever|
     # end
     # names = []
-    # prices = []
+    # prices = data.css("li.wineRatings_listItem").css(".wineRatings_rating").first.text
     # ratings = []
     # urls = [] ??????
 
