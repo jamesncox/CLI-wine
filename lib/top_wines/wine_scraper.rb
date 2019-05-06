@@ -36,8 +36,8 @@ end
     # master.map do |whatever|
     # end
     # names = []
-    # prices = data.css("li.wineRatings_listItem").css(".wineRatings_rating").first.text
-    # ratings = []
+    # ratings = data.css("li.wineRatings_listItem").css(".wineRatings_rating").first.text
+    # prices = data.css("div.productPrice").first.css(".prodItemStock_soldOut-smallText").text
     # urls = [] ??????
 
 # [5] pry(Scraper)> x.map {|whatever| {name: whatever.css("span.prodItemInfo_name").text}}
