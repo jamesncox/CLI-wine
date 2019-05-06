@@ -12,21 +12,21 @@ class Scraper
     #scrape for prodItem
     #then separate attributes inside self.get_wine(url)
 
-    # def self.get_wines(url)
-    #     binding.pry
-    #     main_scrape = Nokogiri::HTML(open(url)).css()
-    # end
+    def self.get_wines(url)
+        binding.pry
+        main_scrape = Nokogiri::HTML(open(url)).css()
+    end
 
-    # def self.get_names(url)  
-    #     data = Nokogiri::HTML(open(url)).css("ul.prodList").css("li.prodItem")
+    def self.get_names(url)  
+        data = Nokogiri::HTML(open(url)).css("ul.prodList").css("li.prodItem")
         
-    #     names = data.map do |item|
-    #         item.css("div.prodItemInfo").css("span.prodItemInfo_name").text
+        names = data.map do |item|
+            item.css("div.prodItemInfo").css("span.prodItemInfo_name").text
 
-    #     end 
+        end 
     #     # return names do NOT output
-    #     names.each.with_index(1) {|item, index| puts "#{index}: #{item}"}
-    # end 
+        names.each.with_index(1) {|item, index| puts "#{index}: #{item}"}
+    end 
 
 end
 

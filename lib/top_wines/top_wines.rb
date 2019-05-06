@@ -4,7 +4,7 @@
 # 2. Fabre Montmayou Reserva Cabernet Franc 2016, 96 points, $15.99
 # 3. Susana Balbo Signature Malbec 2016, 95 points, $19.99
 
-class TopWines
+class TopWines::Obj
     attr_accessor :name, :rating, :price, :url
 
     def self.scrape_wines
