@@ -11,9 +11,9 @@ class Scraper
     #scrape for prodItem
     #then separate attributes inside self.get_wine(url)
 
-    def self.get_wines(url)
-        main_scrape = Nokogiri::HTML(open(url)).css()
-    end
+    # def self.get_wines(url)
+    #     main_scrape = Nokogiri::HTML(open(url)).css()
+    # end
 
     def self.get_names(url)
 

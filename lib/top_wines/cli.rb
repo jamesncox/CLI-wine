@@ -3,9 +3,14 @@
 class TopWines::CLI
 
     def call
+        welcome
         list_wines
         menu
         goodbye
+    end
+
+    def welcome
+        puts "Welcome to Top Wines. Let's find you some highly rated wine under $20.00!"
     end
 
     def list_wines
