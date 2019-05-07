@@ -1,4 +1,3 @@
-# require 'nokogiri'
 require 'pry'
 
 class TopWines::Scraper
@@ -6,14 +5,6 @@ class TopWines::Scraper
     def self.scrape
         doc = Nokogiri::HTML(open("https://www.wine.com/list/wine/7155?pricemax=20&ratingmin=95"))
     end
-
-    #new class called self.get_wine(url)
-    #scrape for prodItem
-    #then separate attributes inside self.get_wine(url)
-
-    # def self.get_wines(url)
-    #     main_scrape = Nokogiri::HTML(open(url)).css()
-    # end
 
     def self.get_names(url)
 
