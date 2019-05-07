@@ -18,11 +18,6 @@ class TopWines::Scraper
             TopWines::Wine.new(name, rating, price, description)
             # binding.pry
             end
-            # binding.pry
-        
-        # names = data.map do |item|
-            # item.css("div.prodItemInfo").css("span.prodItemInfo_name").text
-
         end 
     
 end
