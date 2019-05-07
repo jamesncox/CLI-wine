@@ -1,5 +1,3 @@
-require 'pry'
-
 class TopWines::Scraper
     
     def self.scrape
@@ -21,10 +19,3 @@ class TopWines::Scraper
         end 
     
 end
-
-    # names = data.css("div.prodItemInfo").css("span.prodItemInfo_name").text
-    # ratings = data.css("li.wineRatings_listItem").css(".wineRatings_rating").first.text
-    # prices = data.css("div.productPrice").first.css(".prodItemStock_soldOut-smallText").text
-    # urls = data.css(".prodItemInfo_link").first.attributes["href"].value
-
-# Scraper.get_names("https://www.wine.com/list/wine/7155?pricemax=20&ratingmin=95")

@@ -1,6 +1,3 @@
-#our CLI controller
-require 'pry'
-
 class TopWines::CLI
 
     def call
