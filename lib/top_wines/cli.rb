@@ -61,7 +61,7 @@ class TopWines::CLI
 
     def goodbye
         puts ""
-        puts "See you next time for more great wines under $20!"
+        puts "SEE YOU NEXT TIME FOR MORE GREAT WINES UNDER $20!"
         puts ""
     end
 

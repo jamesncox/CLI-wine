@@ -14,7 +14,6 @@ class TopWines::Scraper
             wine_url = item.css(".prodItemInfo_link").first.attributes["href"].value.prepend("https://www.wine.com")
             description = Nokogiri::HTML(open(wine_url)).css("div.viewMoreModule_text").first.text
             TopWines::Wine.new(name, rating, price, description)
-            # binding.pry
             end
         end 
     
