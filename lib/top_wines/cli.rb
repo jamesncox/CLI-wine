@@ -3,6 +3,7 @@
 class TopWines::CLI
 
     def call
+        self.scrape
         list_wines
         list_ratings
         list_prices

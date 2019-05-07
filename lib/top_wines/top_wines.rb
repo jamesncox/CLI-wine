@@ -7,6 +7,19 @@
 class TopWines::Obj
     attr_accessor :name, :rating, :price, :url
 
+    def initialize
+
+    end
+
+    def self.save
+
+    end
+
+    def self.all
+
+    end
+    
+
     def self.scrape_wines
         wines = []
 
