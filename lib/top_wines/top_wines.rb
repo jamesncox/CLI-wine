@@ -4,35 +4,25 @@
 # 2. Fabre Montmayou Reserva Cabernet Franc 2016, 96 points, $15.99
 # 3. Susana Balbo Signature Malbec 2016, 95 points, $19.99
 
-class TopWines::Obj
-    attr_accessor :name, :rating, :price, :url
+class TopWines::Wine
+    attr_accessor :name, :ratings, :prices, :urls
 
-    def initialize
+    @@all = []
 
+    def initialize(name, ratings, prices, urls)
+      @name = name
+      @ratings = ratings
+      @prices = prices
+      @urls = urls
+      self.save 
     end
 
     def self.save
-
+      @@all << self
     end
 
     def self.all
-
+      @@all
     end
-    
-
-    def self.scrape_wines
-        wines = []
-
-     end
-
-
-     names = Scraper.get_names("dkjlfhsdkjhlkjsdhf")
-
-     names.each do |str|
-        self.new.name = str 
-     end
-
- 
-
 
 end
