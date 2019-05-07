@@ -20,10 +20,10 @@ class Scraper
         data = Nokogiri::HTML(open(url)).css("ul.prodList").css("li.prodItem")
         data.each do |item|
             name = item.css("div.prodItemInfo").css("span.prodItemInfo_name").text
-            ratings = item.css("li.wineRatings_listItem").css(".wineRatings_rating").first.text
-            prices = item.css("div.productPrice").first.css(".prodItemStock_soldOut-smallText").text
-            urls = item.css(".prodItemInfo_link").first.attributes["href"].value.prepend("https://www.wine.com")
-            Obj.new(name, ratings, prices, urls)
+            rating = item.css("li.wineRatings_listItem").css(".wineRatings_rating").first.text
+            price = item.css("div.productPrice").first.css(".prodItemStock_soldOut-smallText").text
+            url = item.css(".prodItemInfo_link").first.attributes["href"].value.prepend("https://www.wine.com")
+            Obj.new(name, rating, price, url)
             # binding.pry
             end
         
@@ -31,43 +31,9 @@ class Scraper
             # item.css("div.prodItemInfo").css("span.prodItemInfo_name").text
 
         end 
-    #     # return names do NOT output
-    #     names.each.with_index(1) {|item, index| puts "#{index}: #{item}"}
-    # end 
-
-    # def self.get_ratings(url)
-    #     data =  Nokogiri::HTML(open(url)).css("ul.prodList").css("li.prodItem")
-
-    #     ratings = data.map do |item|
-    #         item.css("li.wineRatings_listItem").css(".wineRatings_rating").first.text
-    #     end
-    #     ratings.each.with_index(1) {|item, index| puts "#{index}: #{item}"}
-    # end
-
-    # def self.get_prices(url)
-    #     data = Nokogiri::HTML(open(url)).css("ul.prodList").css("li.prodItem")
-
-    #     prices = data.map do |item|
-    #         item.css("div.productPrice").first.css(".prodItemStock_soldOut-smallText").text
-    #     end
-    #     prices.each.with_index(1) {|item, index| puts "#{index}: #{item}"}
-    # end
-
-    # def self.get_urls(url)
-    #     data = Nokogiri::HTML(open(url)).css("ul.prodList").css("li.prodItem")
-
-    #     urls = data.map do |item|
-    #         item.css(".prodItemInfo_link").first.attributes["href"].value
-    #     end
-    #     urls.each.with_index(1) {|item, index| puts "#{index}: #{item}"}
-    # end
-
+    
 end
 
-    # master = []
-
-    # master.map do |whatever|
-    # end
     # names = data.css("div.prodItemInfo").css("span.prodItemInfo_name").text
     # ratings = data.css("li.wineRatings_listItem").css(".wineRatings_rating").first.text
     # prices = data.css("div.productPrice").first.css(".prodItemStock_soldOut-smallText").text

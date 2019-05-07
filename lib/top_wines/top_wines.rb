@@ -5,15 +5,15 @@
 # 3. Susana Balbo Signature Malbec 2016, 95 points, $19.99
 
 class TopWines::Wine
-    attr_accessor :name, :ratings, :prices, :urls
+    attr_accessor :name, :rating, :price, :url
 
     @@all = []
 
-    def initialize(name, ratings, prices, urls)
+    def initialize(name, rating, price, url)
       @name = name
-      @ratings = ratings
-      @prices = prices
-      @urls = urls
+      @rating = rating
+      @price = price
+      @url = url
       self.save 
     end
 
