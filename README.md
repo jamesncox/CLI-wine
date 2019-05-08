@@ -2,10 +2,6 @@
 
 This Ruby Gem provides a CLI to view the best wines under $20.00 with a critic rating of 95 or higher from www.wines.com.
 
-## Installation
-
-    $ gem install top-wines
-
 ## Usage
 
 Run the app by calling ./bin/top_wines, after boot, it will pull up all the wines from www.wine.com under $20.00 with a rating of 95    or higher. After you can inquire a descprition wine maker's notes for each wine by inputting the correct number. Also, you can type     'list' to see all the wines again, or type 'exit' to quit the app.
