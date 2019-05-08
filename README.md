@@ -1,24 +1,16 @@
 # Best Wines Under $20
 
-<!-- TopGames
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file lib/top_games. To experiment with that code, run bin/console for an interactive prompt. -->
+This Ruby Gem provides a CLI to view the best wines under $20.00 with a critic rating of 95 or higher from www.wines.com.
 
-TODO: Delete this and the text above, and describe your gem
+## Installation
 
-Installation
-Add this line to your application's Gemfile:
+    $ gem install top-wines
 
-<!-- gem 'top_games'
-And then execute: -->
+## Usage
 
 Run the app by calling ./bin/top_wines, after boot, it will pull up all the wines from www.wine.com under $20.00 with a rating of 95    or higher. After you can inquire a descprition wine maker's notes for each wine by inputting the correct number. Also, you can type     'list' to see all the wines again, or type 'exit' to quit the app.
 
-<!-- $ gem install top_games
-Usage
-Run the app by calling ./bin/top_games, after boot, it will pull up the top three games
-from pcgamer.com, after you can inquire a summary of each game by inputting the correct
-number, it will also bring you back to the main menu afterwards. You can type 'exit' to 
-quit the app.  -->
+## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
