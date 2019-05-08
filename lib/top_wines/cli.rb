@@ -4,7 +4,6 @@ class TopWines::CLI
         welcome
         fetch_wines
         menu
-        goodbye
     end
 
     def welcome
@@ -49,7 +48,10 @@ class TopWines::CLI
             elsif input == "list"
                 puts ""
                 list_wines
-            else
+            elsif input == "exit"
+                puts ""
+                goodbye
+            else 
                 puts ""
                 puts "I'M NOT SURE WHAT YOU MEANT"
             end
@@ -57,7 +59,6 @@ class TopWines::CLI
     end
 
     def goodbye
-        puts ""
         puts "SEE YOU NEXT TIME FOR MORE GREAT WINES UNDER $20!"
         puts ""
     end
