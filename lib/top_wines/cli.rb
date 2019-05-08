@@ -39,7 +39,6 @@ class TopWines::CLI
         while input != "exit"
             puts ""
             puts "ENTER THE NUMBER OF THE WINE YOU'D LIKE MORE INFO ON OR TYPE LIST TO SEE WINES AGAIN OR TYPE EXIT"
-            puts ""
             input = gets.strip.downcase 
 
             if (1..TopWines::Wine.all.length).include?(input.to_i)
@@ -47,14 +46,12 @@ class TopWines::CLI
                 get_info(input.to_i)
                 puts ""
                 get_description(input.to_i)
-                puts ""
             elsif input == "list"
                 puts ""
                 list_wines
             else
                 puts ""
-                puts "NOT SURE WHAT YOU MEANT. TYPE LIST OR EXIT"
-                puts ""
+                puts "I'M NOT SURE WHAT YOU MEANT"
             end
         end
     end
