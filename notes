@@ -18,7 +18,7 @@ Program it out: getting the classes to interact/work
 
 
 
-Creating a CLI gem to give a user 95+ point wines under $20:
+Creating a CLI gem to give a user 90+ point wines under $20:
 
 shows a list of wines
 (name, price, rating, url for more info)

@@ -13,7 +13,7 @@ class TopWines::CLI
     end
 
     def fetch_wines
-        TopWines::Scraper.get_names("https://www.wine.com/list/wine/7155?pricemax=20&ratingmin=95")
+        TopWines::Scraper.get_names("https://www.wine.com/list/wine/7155?pricemax=20&ratingmin=90")
     end
 
     def list_wines 
