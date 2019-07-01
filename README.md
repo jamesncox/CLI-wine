@@ -4,7 +4,7 @@ This Ruby Gem provides a CLI to view the best wines under $20.00 with a critic r
 
 ## Usage
 
-Run the app by calling ./bin/top_wines, after boot, it will pull up all the wines from www.wine.com under $20.00 with a rating of 90 points or higher. After you can inquire a descprition wine maker's notes for each wine by inputting the correct number. Also, you can type 'list' to see all the wines again, or type 'exit' to quit the app.
+To use this app, just clone, run rake db:migrate and then run shotgun. Then follow the home page's instructions to sign up or login!
 
 ## Development
 
@@ -14,7 +14,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/jamesncox/CLI-wine. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/jamesncox/sinatra_soccer. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
 
 
 ## License
